@@ -28,12 +28,12 @@ const $memoryCardWoman = createMemoryCard({
 
 
 $cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardC);
-$cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardC);
-$cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardJS);
-$cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardJS);
 $cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardJava);
+$cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardJS);
+$cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardC);
 $cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardJava);
 $cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardWoman);
+$cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardJS);
 $cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardWoman);
 
 
