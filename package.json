@@ -1,0 +1,23 @@
+{
+  "name": "memory-game",
+  "version": "1.0.0",
+  "description": "Jogo da memória",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TonRC/memory-game.git"
+  },
+  "keywords": [
+    "jogo",
+    "memoria"
+  ],
+  "author": "Elton Ribeiro",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/TonRC/memory-game/issues"
+  },
+  "homepage": "https://github.com/TonRC/memory-game#readme"
+}
