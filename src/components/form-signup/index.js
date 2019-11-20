@@ -17,16 +17,16 @@ const formSignup = (function() {
     module._children = () => {
             
         const $emailLabel = labelCollabcode.render("email:");
-        const $emailInput = inputCollabcode.render("example@gmail.com");
+        const $emailInput = inputCollabcode.render("example@gmail.com", "email");
             
         const $usernameLabel = labelCollabcode.render("Username");
         const $usernameInput = inputCollabcode.render("SeuNome");
 
         const $passwordLabel = labelCollabcode.render("Password");
-        const $passwordInput = inputCollabcode.render("******");
+        const $passwordInput = inputCollabcode.render("******", "password");
 
         const $confirmPasswordLabel = labelCollabcode.render("Confirm Password");
-        const $confirmPasswordInput = inputCollabcode.render("******");
+        const $confirmPasswordInput = inputCollabcode.render("******", "password");
 
         const $btn = btnCollabcode.render("Signup");
 
