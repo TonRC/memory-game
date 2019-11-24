@@ -14,19 +14,25 @@ const eyeCollabcode = (function() {
                 text-indent: -9999px;
                 width: 24px;
                 height: 15px;
+                cursor: pointer;
             }
         `;
 
         $head.insertAdjacentElement("beforeend", $style);
     };
 
+    module.handleClick = () => {
+        console.log("aee!!");
+    }
+
     module.render = () => {
         module._style();
         return `
-        <label class="eye-collabcode">Mostrar Senha</label>
+        <label class="eye-collabcode" onClick="eyeCollabcode.handleClick()">Mostrar Senha</label>
     `;
 };
     return {
-        render: module.render
+        render: module.render,
+        handleClick: module.handleClick
     }
 })();
