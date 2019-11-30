@@ -21,8 +21,11 @@ const eyeCollabcode = (function() {
         $head.insertAdjacentElement("beforeend", $style);
     };
 
-    module.handleClick = () => {
-        console.log("aee!!");
+    module.handleClick = function() {
+        const attrFor = this.getAttribute("for");
+        const $input = document.querySelector(`#${attrFor}`);
+
+        $input.setAttribute("type", "text");
     }
 
     module.render = ({attrFor = ""}) => {
@@ -31,7 +34,7 @@ const eyeCollabcode = (function() {
         <label 
         for="${attrFor}" 
         class="eye-collabcode" 
-        onClick="eyeCollabcode.handleClick()">Mostrar Senha</label>
+        onClick="eyeCollabcode.handleClick.bind(this)()">Mostrar Senha</label>
     `;
 };
     return {
